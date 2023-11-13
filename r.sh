@@ -1,4 +1,8 @@
 #!/bin/bash
+cd / && apt update && apt upgrade -y && python -m pip install --upgrade pip setuptools wheel
+python -m pip install jedi fastapi kaleido python-multipart uvicorn && python -m pip install libtorrent && sudo apt-get install python3-libtorrent
+wget https://downloads.rclone.org/v1.64.2/rclone-v1.64.2-linux-amd64.deb
+pip install colab-xterm
 rclone config create mega mega user rabkaniassuh1@proton.me pass Colab2drive
 sudo mkdir -p /content/mega
 sudo ln -s /bin/fusermount /bin/fusermount3
